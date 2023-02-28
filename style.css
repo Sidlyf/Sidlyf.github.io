@@ -293,6 +293,8 @@ section .title::after {
   }
 }
 
+/* SkillSet like Backend, frontend div */
+
 .bar{
   background-color: #EEE;
   padding: 2px;
