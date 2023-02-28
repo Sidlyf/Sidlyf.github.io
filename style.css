@@ -295,7 +295,7 @@ section .title::after {
 
 /* SkillSet like Backend, frontend div */
 
-.bar{
+/* .bar{
   background-color: #EEE;
   padding: 2px;
   border-radius: 15px;
@@ -335,7 +335,7 @@ section .title::after {
 }
 .bar.advanced::before{
   width: calc(65% - 10px);
-}
+} */
 
 
 
@@ -442,7 +442,7 @@ section .title::after {
 
 /*================================= project section styling ======================================*/
 .project{
-  margin-top: 200px;
+  margin-top: auto;
 }
 
 .project .title::after {
