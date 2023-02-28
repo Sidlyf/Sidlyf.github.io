@@ -449,7 +449,7 @@ section .title::after {
   content: "see my work";
 }
 
-.project  .card {
+.project .carousel .card {
   background: rgb(234, 228, 228);
   border-radius: 6px;
   padding: 25px 35px;
@@ -461,17 +461,17 @@ section .title::after {
   background: rgb(220, 167, 20);
   color: #f1f1f1;
 } */
-.project .card .box {
+.project .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.project .card:hover .box {
+.project .carousel .card:hover .box {
   transform: scale(1.05);
 }
-.project .card .text {
+.project .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -514,7 +514,7 @@ section .title::after {
   color:rgb(13, 12, 12);
 }
 
-.project .card img {
+.project .carousel .card img {
   height: 250px;
   width: 350px;
   object-fit: cover;
@@ -522,11 +522,11 @@ section .title::after {
   border: 5px solid crimson;
   transition: all 0.3s ease;
 }
-.project .card:hover img {
+.project .carousel .card:hover img {
   border-color: #fff;
   color: rgb(8, 7, 7);
 }
-/* .owl-dots {
+.owl-dots {
   text-align: center;
   margin-top: 20px;
 }
@@ -546,7 +546,7 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover {
   background: crimson !important;
-} */
+}
 .skills-images {
   width: 120px;
   height: 120px;
