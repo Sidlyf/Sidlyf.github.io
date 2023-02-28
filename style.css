@@ -526,7 +526,7 @@ section .title::after {
   border-color: #fff;
   color: rgb(8, 7, 7);
 }
-.owl-dots {
+/* .owl-dots {
   text-align: center;
   margin-top: 20px;
 }
@@ -546,7 +546,7 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover {
   background: crimson !important;
-}
+} */
 .skills-images {
   width: 120px;
   height: 120px;
