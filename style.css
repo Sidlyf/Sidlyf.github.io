@@ -68,7 +68,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: rgb(249, 138, 42);
+  background: #111;
   transform: translateX(-50%);
 }
 section .title::after {
@@ -76,9 +76,9 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: rgb(230, 230, 230);
+  color: crimson;
   padding: 0 5px;
-  background:  rgb(97, 92, 82);
+  background:  #fff;
   transform: translateX(-50%);
 }
 
@@ -93,7 +93,7 @@ section .title::after {
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: rgb(250, 246, 247);
+  background: crimson;
 }
 .navbar .max-width {
   display: flex;
@@ -101,16 +101,16 @@ section .title::after {
   justify-content: space-between;
 }
 .navbar .logo a {
-  color: rgb(179, 248, 76);
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: rgb(97, 92, 82);
-  /* transition: all 0.3s ease; */
+  color: crimson;
+  transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
-  color:  rgb(97, 92, 82);
+  color:  #fff;
 }
 .navbar .menu li {
   list-style: none;
@@ -118,22 +118,22 @@ section .title::after {
 }
 .navbar .menu li a {
   display: block;
-  color: rgb(250, 142, 35);
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: rgb(229, 85, 114);
+  color: crimson;
 }
 .navbar.sticky .menu li a:hover {
-  color:  rgb(97, 92, 82);
+  color:  #fff;
 }
 
 /* menu btn styling */
 .menu-btn {
-  color: rgb(97, 92, 82);
+  color:#fff;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -142,12 +142,12 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: rgb(216, 250, 165);
+  background:crimson;
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color:  rgb(221, 151, 10);
+  color: #fff;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
@@ -169,14 +169,14 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  /* background: url("images/stack.jpg") no-repeat center; */
-  /* background-color: rgb(189, 206, 244); */
+  background: url("images/stack.jpg") no-repeat center;
+  background-color:  #111;
   height: 100vh;
-  color: rgb(97, 92, 82);
+  color:#fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  /* font-family: "Ubuntu", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
   width: 100%;
@@ -198,30 +198,31 @@ section .title::after {
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: rgb(221, 151, 10);
+  color: crimson;
   font-weight: 500;
 }
 .home .home-content a {
   display: inline-block;
-  background: rgb(221, 246, 179);
-  color: rgb(97, 92, 82);
+  background:crimson;
+  color: #fff;
   font-size: 25px;
-  padding: 5px;
+  padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
-  border-radius: 10px;
-  color:  rgb(221, 151, 10);
+  border-radius: 6px;
+  border: 2px solid crimson;
+  /* color:  rgb(221, 151, 10); */
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  color: rgb(221, 151, 10);
+  color: crimson;
   background: none;
 }
 
 /* about section styling */
-/* .about .title::after {
+.about .title::after {
   content: "who i am";
-} */
+}
 .about .about-content .left {
   width: 45%;
 }
@@ -240,25 +241,27 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color:  rgb(221, 151, 10);
+  color:  crimson;
 }
 .about .about-content .right p {
   text-align: justify;
 }
 .about .about-content .right a {
   display: inline-block;
-  color:  rgb(221, 151, 10);
-  color: #fff;
+  background: crimson;
+  /* color:  rgb(221, 151, 10); */
+  color:  #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  color:  rgb(221, 151, 10);
+  /* color:  rgb(221, 151, 10); */
+  border: 2px solid crimson;
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color:  rgb(221, 151, 10);
+  color: crimson;
   background: none;
 }
 
@@ -345,14 +348,14 @@ section .title::after {
   /* border: 5px solid crimson; */
   transition: all 0.3s ease;
 }
-/* .skills .title::after {
+.skills .title::after {
   content: "what i know";
-} */
+}
 
 
 /*============================================== skills right column ==========================================================*/
 .skills .skills-content .column {
-  width: calc(40%  );
+  width: calc(50% - 30px );
   /* border: 2px solid black; */
   height: 60vh;
   display: grid;
@@ -369,14 +372,15 @@ section .title::after {
 }
 .skills .skills-content .left a {
   display: inline-block;
-  color:  rgb(221, 151, 10);
+  color:  crimson;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  color:  rgb(221, 151, 10);
+  border: 2px solid crimson;
+  /* color:  rgb(221, 151, 10); */
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
@@ -439,28 +443,32 @@ section .title::after {
   margin-top: 200px;
 }
 
+.project .title::after {
+  content: "see my work";
+}
+
 .project .carousel .card {
-  background: rgb(253, 120, 76);
-  border-radius: 50px;
+  background: rgb(234, 228, 228);
+  border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover {
+/* .project .carousel .card:hover {
   background: rgb(220, 167, 20);
   color: #f1f1f1;
-}
+} */
 .project .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
-/* .project .carousel .card:hover .box {
+.project .carousel .card:hover .box {
   transform: scale(1.05);
-} */
+}
 .project .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -479,7 +487,7 @@ section .title::after {
 .repo-div {
   display: flex;
   width: 35%;
-  border: 1px solid white;
+  border: 1px solid rgb(15, 14, 14);
   justify-content: center;
   align-items: center;
 }
@@ -487,7 +495,7 @@ section .title::after {
 .demo-div {
   display: flex;
   width: 35%;
-  border: 1px solid white;
+  border: 1px solid rgb(22, 21, 21);
   justify-content: center;
   align-items: center;
 }
@@ -501,12 +509,12 @@ section .title::after {
 .demo-div a:link,
 .techStack {
   text-decoration: none;
-  color: white;
+  color:rgb(13, 12, 12);
 }
 
 .project .carousel .card img {
   height: 250px;
-  width: 250px;
+  width: 350px;
   object-fit: cover;
   border-radius: 5%;
   border: 5px solid crimson;
@@ -514,7 +522,7 @@ section .title::after {
 }
 .project .carousel .card:hover img {
   border-color: #fff;
-  color: white;
+  color: rgb(8, 7, 7);
 }
 .owl-dots {
   text-align: center;
@@ -530,7 +538,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .owl-dot.active {
-  width: 35px;
+  width: 55px;
   border-radius: 14px;
 }
 .owl-dot.active,
@@ -542,7 +550,16 @@ section .title::after {
   height: 120px;
 }
 
+#bagelly{
+  width: 350px;
+
+}
+
 /*============================================ contact section styling ====================================================================*/
+
+.contact .title::after {
+  content: "get in touch";
+}
 
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -568,7 +585,7 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color:  rgb(221, 151, 10);
+  color:  crimson;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -640,7 +657,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  border-color:antiquewhite;
+  color: crimson;
   background: none;
 }
 /* footer section styling */
@@ -651,7 +668,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color:  rgb(221, 151, 10);
+  color:  crimson;
   text-decoration: none;
 }
 footer span a:hover {
