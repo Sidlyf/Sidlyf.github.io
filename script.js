@@ -73,9 +73,9 @@ $(document).ready(function () {
   });
 
   const mydownload=()=>{
-    window.open("https://drive.google.com/file/d/1sNJCk3v6fLXMraHQEgCiRPv94m-JXqjz/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1X5FFX1PClDhQhgac9lk00UZRPK7tEmwF/view?usp=sharing")
   }
 
  const mydownloadResume=()=>{
-  window.open("https://drive.google.com/file/d/1sNJCk3v6fLXMraHQEgCiRPv94m-JXqjz/view?usp=sharing")
+  window.open("https://drive.google.com/file/d/1X5FFX1PClDhQhgac9lk00UZRPK7tEmwF/view?usp=sharing")
  }
